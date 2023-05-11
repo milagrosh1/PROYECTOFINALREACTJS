@@ -1,0 +1,57 @@
+
+*{
+    text-decoration: none;
+    color: inherit;
+}
+#root{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  
+  header{
+      background-color: #6c757d ;
+    }
+    
+    .nav-bar{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .logo-medidas{
+        width: 6rem;
+        translate: 6rem 2.5rem;
+        scale: 3;
+    }
+    .nav-item{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    li{
+        list-style: none;
+        padding: 1px;
+        cursor: pointer;
+        color: rgb(0, 0, 0)
+    }
+
+.navLinks {
+    display: inline-block;
+    font-size: calc(1rem + 1vw);
+    font-weight:lighter;
+    text-decoration: none;
+    padding: 1rem;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.755);
+    text-shadow: rgb(255, 255, 255) 1px 1px 2px,
+        rgb(0, 0, 0) -1px 1px 2px,
+        black 1px -1px 2px,
+        black -1px -1px 2px,
+        black 1px 1px 2px,
+        black -1px 1px 2px,
+        black 1px -1px 2px,
+        black -1px -1px 2px;
+}
