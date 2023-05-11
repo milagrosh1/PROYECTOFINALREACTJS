@@ -41,6 +41,8 @@ const Checkout = () => {
             return;
         }
 
+        const date = new Date()
+
         const orden = {
             items: carrito.map((producto) => ({
                 id: producto.item.id,
@@ -55,6 +57,7 @@ const Checkout = () => {
             apellido,
             telefono,
             email,
+            date,
         };
 
         addDoc(collection(db, "ordenes"), orden)
