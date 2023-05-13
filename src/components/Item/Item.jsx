@@ -33,10 +33,11 @@ const Item = ({ nombre, id, precio, img, stock }) => {
                     <Link to={`/item/${id}`} className="btn">Ver Detalle</Link>
                 <div className="card-btn">
                     {
-                        agregarCantidad > 0
-                            ? <Link to="/cart"><button className="btnProducto">En carrito 🛒</button></Link>
-                            : <ItemCount inicial={1} stock={stock} funcionAgregar={manejadorCantidad} />
-                    }
+                       agregarCantidad > 0
+                       ? <Link to="/cart"><button className="btnProducto">En carrito 🛒</button></Link>
+                       : stock > 0 
+                           ?<ItemCount inicial={1} stock={stock} funcionAgregar={manejadorCantidad} />
+                           :<Link to="/"><button className="btnProducto">SIN STOCK</button></Link> }
                 </div>
             </div>
         </div>
